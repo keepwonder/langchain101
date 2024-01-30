@@ -9,9 +9,13 @@ LangChain在今年的1月8号发布了v0.1.0版本。之前也断断续续的学
 
 ## 极简入门
 
-**00: Hello Langchain**：[链接](./00_Hello_LangChain)
+**00: Hello LangChain**：[链接](./00_Hello_LangChain)
 
 **01: LCEL**：[链接](./01_LCEL)
 
 **02: Models**：[链接](./02_Models)
+
+**03: Prompts**：[链接](./03_Prompts)
+
+**04: Output Parsers**：[链接](./04_Output_Parsers)
 
