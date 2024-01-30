@@ -1,4 +1,4 @@
-# LangChain 101: 01. Hello LangChain
+# LangChain 101: 00. Hello LangChain
 
 `LangChain`在今年的1月8号发布了v0.1.0版本。之前也断断续续的学习了一遍，奈何学了忘，忘了学。今天开始重新整理一遍，顺便记录下来，顺手写一个【LangChain极简入门课】，供小白使用（大佬可以跳过）。
 本教程默认以下前提：
@@ -51,7 +51,7 @@ load_dotenv()
 ```
 
 ### 代码
-[Hell LangChain.ipynb](./Hello%20LangChain.ipynb)
+[Hello LangChain.ipynb](./Hello_LangChain.ipynb)
 ```python
 from langchain_openai import ChatOpenAI
 
@@ -74,7 +74,7 @@ content="LangChain can help with creating an LLM (Language Learning Management) 
 pip install langchain==0.1.2 openai
 ```
 
-2. 为了不明文显示Openai API key，我把API Key 放在了.env文件中，通过load_env把API key 加载到环境变量中。一次调用，后续多次使用。
+1. 为了不明文显示Openai API key，我把API Key 放在了.env文件中，通过load_env把API key 加载到环境变量中。一次调用，后续多次使用。
 ```python
 from dotenv import load_dotenv
 
