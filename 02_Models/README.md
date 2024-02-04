@@ -6,7 +6,7 @@
 - LLM使用OpenAI的gpt-3.5-turbo-1106
 - LangChain发展非常迅速，虽然已经大版本v0.1了，后续版本肯定会继续迭代，为避免教程中代码失效。本教程统一使用版本 **0.1.2**
 
-根据Langchain的[代码约定](https://github.com/langchain-ai/langchain/blob/v0.0.235/pyproject.toml#L14C1-L14C24)，Python版本 ">=3.8.1,<4.0"。
+根据Langchain的[代码约定](https://github.com/langchain-ai/langchain/blob/v0.1.2/pyproject.toml#L11)，Python版本 ">=3.8.1,<4.0"。
 
 所有代码和教程开源在github：[https://github.com/keepwonder/langchain101](https://github.com/keepwonder/langchain101)
 
@@ -105,6 +105,6 @@ Langchain框架提供了5个消息类，分别是 `AIMessage`、`HumanMessage` �
 要注意，虽然是聊天，但是当前我们所实现的交互并没有记忆能力，也就是说，模型并不会记住之前的对话内容。在后续的内容中，我们将学习如何实现记忆能力。
 
 ### 相关文档
-1. [https://platform.openai.com/docs/models](https://platform.openai.com/docs/**models**)
+1. [https://platform.openai.com/docs/models](https://platform.openai.com/docs/models)
 2. [https://python.langchain.com/docs/modules/model_io/llms/quick_start](https://python.langchain.com/docs/modules/model_io/llms/quick_start)
 3. [https://python.langchain.com/docs/modules/model_io/chat/quick_start](https://python.langchain.com/docs/modules/model_io/chat/quick_start)
