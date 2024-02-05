@@ -14,6 +14,7 @@
 ![](./model_io.jpg)
 
 ## Model I/O
+
 今天我们开始介绍Model I/O模块，如上图所示，Model I/O模块包含3部分， 左边绿色部分  Format，中间紫色部分 Predict，右边蓝色部分 Parse。而这三部分分别对应LangChain中最基础也是最重要的三个概念
 
 |输入|处理|输出|
@@ -23,6 +24,7 @@
 今天我们要介绍的是输出部分，也就是输出解析器（Output Parsers）。
 
 ## 简介
+
 LLM的输出为文本，但在程序中除了显示文本，可能希望获得更结构化的数据。这就是输出解析器（Output Parsers）的用武之地。
 
 `LangChain` 为输出解析器提供了基础类 `BaseOutputParser`。不同的输出解析器都继承自该类。它们需要实现以下两个函数：
@@ -67,6 +69,7 @@ def parse_with_prompt(self, completion: str, prompt: PromptValue) -> Any:
 ```
 
 ## LangChain支持的输出解析器
+
 LangChain框架提供了一系列解析器实现来满足应用在不同功能场景中的需求。它们包括且不局限于如下解析器：
 - CSV parser
 - Datetime parser
@@ -96,7 +99,7 @@ output_parser = CommaSeparatedListOutputParser()
 output_parser.parse('red, green, blue')
 ```
 
-你应该能看到如下输出：
+类似输出如下：
 
 ```shell
 ['red', 'green', 'blue']
@@ -141,15 +144,17 @@ chain = prompt | model | output_parser
 chain.invoke({"question": "what's the capital of france?"})
 ```
 
-你应该期望能看到如下输出：
+类似输出如下：
 ```shell
 {'answer': 'The capital of France is Paris.',
  'source': 'https://en.wikipedia.org/wiki/Paris'}
 ```
 
 ## 总结
+
 本节课程中，我们学习了什么是 `输出解析器` ，LangChain支持的常见解析器，以及如何使用常见的两款解析器 `CSV parser` 和 `Structured output parser`。
 
 ### 相关文档
-1. [Output ParserS官方文档](https://python.langchain.com/docs/modules/model_io/output_parsers/) 
-2. [Partial - Prompt Templates](https://python.langchain.com/docs/modules/model_io/prompts/partial)
+
+1. [https://python.langchain.com/docs/modules/model_io/output_parsers/](https://python.langchain.com/docs/modules/model_io/output_parsers/) 
+2. [https://python.langchain.com/docs/modules/model_io/prompts/partial](https://python.langchain.com/docs/modules/model_io/prompts/partial)

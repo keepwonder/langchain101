@@ -19,3 +19,5 @@ LangChain在今年的1月8号发布了v0.1.0版本。之前也断断续续的学
 
 **04: Output Parsers**：[链接](./04_Output_Parsers)
 
+**05: Retrieval**：[链接](./05_Retrieval)
+
