@@ -22,3 +22,5 @@ LangChain在今年的1月8号发布了v0.1.0版本。之前也断断续续的学
 **05: Retrieval**：[链接](./05_Retrieval)
 
 **06: Chains**：[链接](./06_Chains/)
+
+**07: Agents**：[链接](./07_Agents/)
